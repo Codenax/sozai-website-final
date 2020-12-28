@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: NotoSansCJKjp;
+  src: url("../../assets/fonts/NotoSansCJKjp-Light.otf") format("opentype");
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+}
+
+// .container-fluid {
+//   width: 100%;
+// }
+// .container {
+//   width: 1200px;
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }
+.img-responsive {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,343 @@
+.sidebar {
+  background-color: $dark-blue;
+  padding-top: 9rem;
+  padding-bottom: 7rem;
+  text-align: center;
+  position: absolute;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  //top: 0;
+  height: 775px;
+  z-index: 9999;
+  top: -130%;
+  transition: top 1s;
+  .link-area {
+    text-align: left;
+    h3 {
+      font-size: 1.6rem;
+      color: $grey-light-2;
+      padding-bottom: 1rem;
+      font-weight: 400;
+      a {
+        text-decoration: none;
+        color: $grey-light-2;
+        font-size: 1.6rem;
+        font-weight: 400;
+        transition: 0.4s;
+      }
+      a:hover {
+        color: $white;
+        transition: 0.4s;
+      }
+    }
+    .sideber-img {
+      width: 227px;
+      height: 105px;
+      margin-bottom: 1rem;
+    }
+    li {
+      list-style: none;
+      margin-top: 1.6rem;
+      a {
+        text-decoration: none;
+        color: $grey-light-2;
+        font-size: 1.4rem;
+        font-weight: 400;
+        transition: 0.4s;
+      }
+      a:hover {
+        color: $white;
+        transition: 0.4s;
+      }
+    }
+    .col-md-3:last-child {
+      padding-top: 3rem;
+      h3 {
+        margin-bottom: 1rem;
+      }
+      .sideber-button:nth-of-type(1) {
+        margin-top: 5.5rem;
+      }
+    }
+  }
+  .language-social-icon {
+    margin-top: 8.5rem;
+    padding: 2.2rem 0;
+    padding-bottom: 2rem;
+    border-top: solid 0.1rem $grey-light;
+    border-bottom: solid 0.1rem $grey-light;
+    display: flex;
+    justify-content: space-between;
+    .language-area {
+      position: relative;
+      display: block;
+      img {
+        float: left;
+        height: 2.2rem;
+        width: auto;
+      }
+      .language-show {
+        line-height: 2rem;
+        font-size: 1.4rem;
+        color: $white;
+        margin-left: 0rem;
+        text-decoration: none;
+        cursor: pointer;
+
+        img {
+          margin-right: 1.5rem;
+        }
+        i {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+    .select-language-area {
+      bottom: 4rem;
+      position: absolute;
+      padding: 1.5rem 1.5rem;
+      padding-bottom: 0rem;
+      width: 25rem;
+      border-radius: 0.6rem;
+      background-color: #ededed;
+      display: none;
+      li {
+        text-align: left;
+        list-style: none;
+        margin-bottom: 1.5rem;
+
+        color: $dark;
+        cursor: pointer;
+        img {
+          height: 2.2rem;
+          width: auto;
+        }
+        h5 {
+          font-size: 1.3rem;
+          line-height: 2.1rem;
+          margin-left: 4.5rem;
+        }
+      }
+    }
+
+    .social-icon-area {
+      a {
+        text-decoration: none;
+        color: $white;
+        font-size: 2.5rem;
+        margin-left: 1rem;
+        line-height: 0;
+      }
+    }
+  }
+  /* close btn */
+
+  .link-area {
+    position: relative;
+    .close-btn {
+      position: absolute;
+      top: -6rem;
+      right: 0rem;
+      cursor: pointer;
+      i {
+        color: $grey-light-2;
+        font-size: 3rem;
+        transition: color 0.4s;
+      }
+      i:hover {
+        color: $white;
+        transition: all 0.4s;
+      }
+    }
+  }
+  /* close btn end*/
+
+  /* --accordion css start-- */
+  .accordion {
+    > .card {
+      overflow: hidden;
+    }
+  }
+  .accordion > .card > .card-header {
+    border-radius: 0;
+    margin-bottom: -1px;
+  }
+  .accordion {
+    display: none;
+    .card {
+      position: relative;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: transparent;
+      background-clip: border-box;
+      border: none;
+      border-radius: 0;
+      border-bottom: solid 1px $grey-light-2;
+      padding-bottom: 0rem;
+      text-align: left;
+      .card-header {
+        padding: 0rem 0rem;
+        margin-bottom: 0;
+        background-color: transparent;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+        h3 {
+          padding: 1.5rem 0rem;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+          font-weight: 500;
+          i {
+            transform: rotateZ(-180deg);
+            transition: all 1s;
+            float: right;
+
+            margin-right: 0.5rem;
+          }
+        }
+        .collapsed {
+          h3 i {
+            transform: rotateZ(0deg);
+            transition: all 1s;
+          }
+        }
+      }
+      .card-body {
+        padding: 0rem;
+        flex: 1 1 auto;
+        min-height: 1px;
+        height: auto;
+        li {
+          margin-top: 0;
+          margin-bottom: 1.5rem;
+        }
+        p {
+          font-weight: 400;
+        }
+      }
+    }
+    .card:nth-of-type(1) {
+      border-top: solid 1px $grey-light-2;
+    }
+    .collapse:not(.show) {
+      display: none;
+    }
+    .collapsing {
+      position: relative;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.35s ease;
+    }
+  }
+  /* --accordion css end-- */
+}
+
+.sidebar.show {
+  overscroll-behavior: contain;
+  top: 0;
+  transition: top 1s;
+}
+
+@media (max-width: 991px) {
+  .sidebar.show {
+    overflow: auto;
+    overscroll-behavior: contain;
+    left: 0;
+    transition: left 1s;
+  }
+  .sidebar .link-area .sideber-img {
+    width: 150px !important;
+    height: 69px !important;
+    margin-bottom: 1rem !important;
+  }
+  .sidebar {
+    left: -100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    transition: left 1s;
+    .col-md-3:last-child {
+      .sideber-button {
+        width: 15rem;
+        height: 5rem;
+        padding-top: 1.5rem;
+        font-size: 1.4rem !important;
+      }
+      .sideber-button:nth-of-type(1) {
+        margin-top: 1.5rem !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    padding-top: 6rem;
+
+    .link-area {
+      text-align: center;
+      .close-btn {
+        top: -4.5rem;
+        right: 0rem;
+      }
+      .accordion .card {
+        text-align: left;
+        .card-body {
+          li:first-of-type {
+            margin-top: 1rem;
+          }
+        }
+      }
+      .col-md-3:last-child {
+        padding-top: 0rem;
+        h3 {
+          text-align: left;
+          padding: 1.5rem 0rem;
+          border-bottom: solid 1px $grey-light-2;
+          margin-bottom: 0rem;
+        }
+        .sideber-button:nth-of-type(1) {
+          margin-top: 3.5rem !important;
+        }
+      }
+      .sideber-button {
+        text-align: center;
+        margin-left: auto;
+        width: 330px !important;
+      }
+    }
+
+    .language-social-icon {
+      margin-top: 3.5rem;
+    }
+    .accordion {
+      display: block;
+    }
+    .dis-hide {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .sidebar {
+    .col-md-3:last-child {
+      .sideber-button {
+        width: 100% !important;
+        height: 5rem;
+        padding-top: 1.5rem;
+        font-size: 1.4rem !important;
+      }
+      .sideber-button:nth-of-type(1) {
+        margin-top: 1.5rem !important;
+      }
+    }
+  }
+}

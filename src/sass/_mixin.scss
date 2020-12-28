@@ -1,0 +1,9 @@
+@mixin gradient-primary {
+  background: -webkit-linear-gradient(
+    86deg,
+    rgba(70, 137, 53, 1) 0%,
+    rgba(151, 205, 22, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

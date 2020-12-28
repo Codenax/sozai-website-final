@@ -1,0 +1,156 @@
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $white;
+  width: auto;
+  height: 4rem;
+  font-family: $NanoLight;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-decoration: none;
+
+  span {
+    position: absolute;
+    right: 1.5rem;
+    color: $primary;
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-radius: 4rem;
+  color: $white;
+  height: 4rem;
+  width: 13rem;
+  transition: background-color 0.4s;
+}
+
+.btn-primary:hover {
+  background-color: $primary-dark-h;
+  transition: background-color 0.4s;
+}
+
+.btn-primary-outline {
+  width: 22rem;
+  height: 5rem;
+  font-size: 1.4rem;
+  border: 1px solid $primary;
+  border-radius: 4rem;
+  color: $primary;
+  transition: all 0.4s;
+}
+
+.btn-primary-outline:hover {
+  i {
+    color: $grey-light-white !important;
+    transition: all 0.4s;
+  }
+
+  color: $primary !important;
+  border: 1px solid $primary;
+  transition: all 0.4s;
+}
+.btn-primary-outline-xl {
+  border: 1px solid $primary;
+  border-radius: 4rem;
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  width: 24.6rem;
+  height: 6.5rem;
+  color: $primary;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.4s;
+}
+
+.btn-primary-outline-xl:hover {
+  i {
+    color: $primary-light-white;
+    transition: all 0.4s;
+  }
+  border: 1px solid $primary-light-white;
+  font-weight: bold !important;
+  color: $primary-light-white !important;
+  font-size: 1.8rem !important;
+  font-weight: 500 !important;
+  transition: all 0.4s;
+}
+.btn-primary-color-xl {
+  border: 1px solid $primary;
+  background-color: $primary;
+  border-radius: 4rem;
+  color: $white;
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  width: 24.6rem;
+  height: 6.5rem;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  span {
+    color: $white;
+  }
+  transition: all 0.4s;
+}
+.btn-primary-color-xl:hover {
+  border: 1px solid $primary-dark-h;
+  background-color: $primary-dark-h;
+  transition: all 0.4s;
+}
+
+.btn-primary-outline-box {
+  display: block;
+  font-family: $NanoLight;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  padding-top: 0.8rem;
+  background: $white;
+  color: $secondary;
+  width: 12rem;
+  height: 3rem;
+  border: 1px solid;
+  border-image-source: linear-gradient(45deg, $primaryGr1 0%, $primaryGr2 100%);
+  border-image-slice: 1;
+  transition: all 0.4s;
+}
+
+.btn-primary-outline-box:hover {
+  color: $primary-light-white !important;
+  border: 1px solid $primary-light-white;
+  transition: all 0.4s;
+}
+
+.sideber-button{
+  text-align: center;
+  border: 1px solid $primary;
+  background-color: transparent;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-top: 1.9rem;
+  width: 20rem;
+  height: 5.8rem;
+  color: $grey-light-2;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 2rem;
+  transition: all 0.4s;
+}
+.sideber-button:hover{
+  color: $white;
+  transition: all 0.4s;
+}
