@@ -245,12 +245,12 @@
   transition: top 1s;
 }
 
-@media(min-width:1200px){
-  .sidebar{
-  width: 1200px;
-  left: 50%;
-  transform: translateX(-50%);}
-}
+// @media(min-width:1200px){
+//   .sidebar{
+//   width: 1200px;
+//   left: 50%;
+//   transform: translateX(-50%);}
+// }
 
 @media (max-width: 991px) {
   .sidebar.show {

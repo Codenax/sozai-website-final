@@ -73,12 +73,12 @@ header {
     height: auto;
     overflow: hidden;
     .image-area{
-      max-width: 1200px;
-      max-height: 620px;
+      width: 100%;
+      height: auto;
       position: relative;
       img{
         width: 100%;
-        height: 100%;
+        height: auto;
         z-index: 1;
       }
       .color-overaly{
@@ -451,8 +451,8 @@ header {
   padding-bottom: 2rem;
   text-align: center;
   position: relative;
-  margin-top: -0.1rem;
-  max-width: 1200px;
+  margin-top: -0.2rem;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   .up-button {

@@ -455,14 +455,14 @@ header {
 }
 
 .slider-area .slider .slider-img .image-area {
-  max-width: 1200px;
-  max-height: 620px;
+  width: 100%;
+  height: auto;
   position: relative;
 }
 
 .slider-area .slider .slider-img .image-area img {
   width: 100%;
-  height: 100%;
+  height: auto;
   z-index: 1;
 }
 
@@ -902,8 +902,8 @@ header {
   padding-bottom: 2rem;
   text-align: center;
   position: relative;
-  margin-top: -0.1rem;
-  max-width: 1200px;
+  margin-top: -0.2rem;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1410,16 +1410,6 @@ header {
   -webkit-transition: top 1s;
   -o-transition: top 1s;
   transition: top 1s;
-}
-
-@media (min-width: 1200px) {
-  .sidebar {
-    width: 1200px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
 }
 
 @media (max-width: 991px) {
