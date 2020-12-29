@@ -73,7 +73,11 @@ html {
   margin-right: auto;
   margin-left: auto;
 }
-
+/* for box-design max width 1200px */
+  .container-fluid {
+    max-width: 1200px;
+  }
+/* for box-design max width 1200px */
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;

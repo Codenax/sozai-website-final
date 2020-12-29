@@ -454,17 +454,48 @@ header {
   overflow: hidden;
 }
 
+.slider-area .slider .slider-img .image-area {
+  max-width: 1200px;
+  max-height: 620px;
+  position: relative;
+}
+
+.slider-area .slider .slider-img .image-area img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.slider-area .slider .slider-img .image-area .color-overaly {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #231815;
+  opacity: .35;
+  z-index: 3;
+}
+
+.slider-area .slider .slider-img .image-area .shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  z-index: 4;
+}
+
 .slider-area .slider .slider-img h2 {
   position: absolute;
+  width: 100%;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 5.4rem;
   font-family: NotoSansLight;
   font-weight: 300;
   color: #ffffff;
+  z-index: 5;
   text-align: center;
 }
 
@@ -872,6 +903,9 @@ header {
   text-align: center;
   position: relative;
   margin-top: -0.1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer .up-button {
@@ -1378,6 +1412,16 @@ header {
   transition: top 1s;
 }
 
+@media (min-width: 1200px) {
+  .sidebar {
+    width: 1200px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 @media (max-width: 991px) {
   .sidebar.show {
     overflow: auto;
@@ -1580,10 +1624,6 @@ header {
     width: 100%;
     line-height: 4rem;
   }
-  .slider-area .slider .slider-img img {
-    width: 150%;
-    margin-left: -25%;
-  }
   /* --Slider-area end-- */
   .news-area {
     position: relative;
@@ -1660,10 +1700,6 @@ header {
     font-size: 2.8rem;
     width: 100%;
     line-height: 4rem;
-  }
-  .slider-area .slider .slider-img img {
-    width: 150%;
-    margin-left: -25%;
   }
   /* --Slider-area end-- */
   .news-area {
@@ -1744,10 +1780,6 @@ header {
     font-size: 2.8rem;
     width: 100%;
     line-height: 4rem;
-  }
-  .slider-area .slider .slider-img img {
-    width: 150%;
-    margin-left: -25%;
   }
   /* --Slider-area end-- */
   .news-area {
@@ -2042,6 +2074,11 @@ header {
 @media (max-width: 991px) {
   .navbar-center {
     display: none !important;
+  }
+  .slider-area .slider .slider-img .image-area {
+    width: 150%;
+    height: auto;
+    margin-left: -25%;
   }
 }
 
